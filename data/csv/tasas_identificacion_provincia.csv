@@ -1,0 +1,83 @@
+course,provincia,ccaa,identificados,matriculados,tasa
+2023-2024,Jaén,Andalucía,1923,103368,0.018603
+2023-2024,Granada,Andalucía,2912,174085,0.016727
+2023-2024,Málaga,Andalucía,5066,315749,0.016044
+2023-2024,Córdoba,Andalucía,2034,137487,0.014794
+2023-2024,Huelva,Andalucía,1342,97928,0.013704
+2023-2024,Sevilla,Andalucía,5066,384311,0.013182
+2023-2024,A Coruña,Galicia,1721,173655,0.00991
+2023-2024,Araba/Álava,País Vasco,563,59112,0.009524
+2023-2024,Palencia,Castilla y León,209,22011,0.009495
+2023-2024,Gipuzkoa,País Vasco,1089,125651,0.008667
+2023-2024,Cádiz,Andalucía,1993,230082,0.008662
+2023-2024,Las Palmas,Canarias,1318,172712,0.007631
+2023-2024,Almería,Andalucía,1030,150727,0.006834
+2023-2024,Pontevedra,Galicia,1015,149292,0.006799
+2023-2024,Bizkaia,País Vasco,1191,181581,0.006559
+2023-2024,Ourense,Galicia,240,38169,0.006288
+2023-2024,Lugo,Galicia,259,42179,0.00614
+2023-2024,Santa Cruz de Tenerife,Canarias,991,162368,0.006103
+2023-2024,León,Castilla y León,360,59110,0.00609
+2023-2024,Cáceres,Extremadura,354,59416,0.005958
+2023-2024,Valladolid,Castilla y León,470,84860,0.005539
+2023-2024,Burgos,Castilla y León,303,54806,0.005529
+2023-2024,Soria,Castilla y León,70,13603,0.005146
+2023-2024,Zamora,Castilla y León,98,19376,0.005058
+2023-2024,València/Valencia,Comunitat Valenciana,1846,475779,0.00388
+2023-2024,Castelló/Castellón,Comunitat Valenciana,411,105960,0.003879
+2023-2024,Alacant/Alicante,Comunitat Valenciana,1050,331898,0.003164
+2023-2024,Badajoz,Extremadura,349,111370,0.003134
+2023-2024,Ávila,Castilla y León,73,23432,0.003115
+2023-2024,Salamanca,Castilla y León,139,46672,0.002978
+2023-2024,Segovia,Castilla y León,66,23928,0.002758
+2023-2024,Cuenca,Castilla-La Mancha,65,30050,0.002163
+2023-2024,Albacete,Castilla-La Mancha,144,66634,0.002161
+2023-2024,Toledo,Castilla-La Mancha,282,135163,0.002086
+2023-2024,Guadalajara,Castilla-La Mancha,91,50420,0.001805
+2023-2024,Zaragoza,Aragón,224,165691,0.001352
+2023-2024,Huesca,Aragón,45,35146,0.00128
+2023-2024,Ciudad Real,Castilla-La Mancha,102,81744,0.001248
+2023-2024,Teruel,Aragón,23,21070,0.001092
+2024-2025,Jaén,Andalucía,1975,102092,0.019345
+2024-2025,Granada,Andalucía,2863,172815,0.016567
+2024-2025,Málaga,Andalucía,5001,315346,0.015859
+2024-2025,Araba/Álava,País Vasco,918,58889,0.015589
+2024-2025,Córdoba,Andalucía,2068,135172,0.015299
+2024-2025,Gipuzkoa,País Vasco,1714,124123,0.013809
+2024-2025,Sevilla,Andalucía,5188,380188,0.013646
+2024-2025,Huelva,Andalucía,1301,96712,0.013452
+2024-2025,Bizkaia,País Vasco,2053,179448,0.011441
+2024-2025,Palencia,Castilla y León,251,22121,0.011347
+2024-2025,A Coruña,Galicia,1860,174607,0.010652
+2024-2025,Cádiz,Andalucía,2093,225358,0.009287
+2024-2025,Pontevedra,Galicia,1195,148577,0.008043
+2024-2025,Cuenca,Castilla-La Mancha,233,30146,0.007729
+2024-2025,Guadalajara,Castilla-La Mancha,378,50214,0.007528
+2024-2025,Las Palmas,Canarias,1277,170332,0.007497
+2024-2025,Lugo,Galicia,318,42783,0.007433
+2024-2025,Albacete,Castilla-La Mancha,474,65815,0.007202
+2024-2025,León,Castilla y León,418,59525,0.007022
+2024-2025,Almería,Andalucía,1018,152843,0.00666
+2024-2025,Soria,Castilla y León,91,13811,0.006589
+2024-2025,Ourense,Galicia,253,38660,0.006544
+2024-2025,Cáceres,Extremadura,381,59318,0.006423
+2024-2025,Burgos,Castilla y León,356,55501,0.006414
+2024-2025,Zamora,Castilla y León,121,19387,0.006241
+2024-2025,Toledo,Castilla-La Mancha,845,135756,0.006224
+2024-2025,Girona,Cataluña,846,138666,0.006101
+2024-2025,Valladolid,Castilla y León,511,84941,0.006016
+2024-2025,Santa Cruz de Tenerife,Canarias,942,160316,0.005876
+2024-2025,València/Valencia,Comunitat Valenciana,2590,479385,0.005403
+2024-2025,Castelló/Castellón,Comunitat Valenciana,549,107483,0.005108
+2024-2025,Ciudad Real,Castilla-La Mancha,369,81466,0.004529
+2024-2025,Alacant/Alicante,Comunitat Valenciana,1388,335890,0.004132
+2024-2025,Salamanca,Castilla y León,181,46641,0.003881
+2024-2025,Segovia,Castilla y León,90,24233,0.003714
+2024-2025,Badajoz,Extremadura,381,109770,0.003471
+2024-2025,Ávila,Castilla y León,80,23592,0.003391
+2024-2025,Barcelona,Cataluña,2745,998641,0.002749
+2024-2025,Tarragona,Cataluña,400,149467,0.002676
+2024-2025,Lleida,Cataluña,304,116333,0.002613
+2024-2025,Zaragoza,Aragón,317,165808,0.001912
+2024-2025,Huesca,Aragón,62,35337,0.001755
+2024-2025,Teruel,Aragón,29,21071,0.001376

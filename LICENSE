@@ -1,0 +1,18 @@
+LICENCIA Y ATRIBUCIÓN
+=====================
+
+1. DATOS ORIGINALES (EDUCAbase)
+   Las cifras de identificación y matrícula proceden de las estadísticas públicas del
+   Ministerio de Educación, Formación Profesional y Deportes de España (EDUCAbase).
+   Son datos públicos de la administración española, de uso libre con atribución a la
+   fuente original.
+
+2. CSV DERIVADOS, CATÁLOGO Y DOCUMENTACIÓN
+   La transformación a JSON/CSV, las tasas derivadas y la documentación de este
+   repositorio se publican bajo Creative Commons Attribution 4.0 International
+   (CC BY 4.0). https://creativecommons.org/licenses/by/4.0/
+
+   Atribución: νοῦς (nous.es) — https://mapa.nous.es
+
+Al reutilizar estos datos, cita tanto al Ministerio de Educación, FP y Deportes
+(EDUCAbase) como a nous.es.
