@@ -5,7 +5,7 @@ de las estadísticas oficiales del Ministerio de Educación, Formación Profesio
 Deportes (**EDUCAbase**). Cobertura por **comunidad autónoma** y **provincia**,
 cursos **2011-12 → 2024-25**.
 
-> Estos datos alimentan el mapa interactivo **[mapa.nous.es](https://mapa.nous.es)**.
+> Estos datos alimentan el mapa interactivo **[aci.nous.es](https://aci.nous.es)**.
 > Espíritu *open data*: las cifras provienen de tablas públicas, descargables y reproducibles.
 
 ## Qué hay aquí
