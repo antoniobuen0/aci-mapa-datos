@@ -52,8 +52,8 @@ LICENSE                           # Licencia y atribución
    Centros, por enseñanza», 2009-10→2013-14), de alcance más amplio: **no se suma ni se
    compara** con la serie principal (ver `CATALOGO.md`).
 6. Algunas tablas de EDUCAbase añaden llamadas de nota a los nombres (p. ej.
-   «Barcelona (2)» en la matrícula 2023-24). Los JSON y los volcados planos las
-   conservan tal cual; las tablas de tasas usan el nombre limpio.
+   «Barcelona (2)» en la matrícula 2023-24). Aquí se publican sin ellas, para que
+   identificación y matrícula casen por nombre.
 
 ## Regenerar
 
