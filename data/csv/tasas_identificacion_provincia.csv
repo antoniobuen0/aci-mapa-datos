@@ -19,6 +19,7 @@ course,provincia,ccaa,identificados,matriculados,tasa
 2023-2024,Santa Cruz de Tenerife,Canarias,991,162368,0.006103
 2023-2024,León,Castilla y León,360,59110,0.00609
 2023-2024,Cáceres,Extremadura,354,59416,0.005958
+2023-2024,Girona,Cataluña,820,139193,0.005891
 2023-2024,Valladolid,Castilla y León,470,84860,0.005539
 2023-2024,Burgos,Castilla y León,303,54806,0.005529
 2023-2024,Soria,Castilla y León,70,13603,0.005146
@@ -28,8 +29,11 @@ course,provincia,ccaa,identificados,matriculados,tasa
 2023-2024,Alacant/Alicante,Comunitat Valenciana,1050,331898,0.003164
 2023-2024,Badajoz,Extremadura,349,111370,0.003134
 2023-2024,Ávila,Castilla y León,73,23432,0.003115
+2023-2024,Lleida,Cataluña,371,121799,0.003046
 2023-2024,Salamanca,Castilla y León,139,46672,0.002978
 2023-2024,Segovia,Castilla y León,66,23928,0.002758
+2023-2024,Tarragona,Cataluña,397,149554,0.002655
+2023-2024,Barcelona,Cataluña,2612,1007932,0.002591
 2023-2024,Cuenca,Castilla-La Mancha,65,30050,0.002163
 2023-2024,Albacete,Castilla-La Mancha,144,66634,0.002161
 2023-2024,Toledo,Castilla-La Mancha,282,135163,0.002086
