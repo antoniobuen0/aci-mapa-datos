@@ -3,10 +3,12 @@ name: Actualizar datos EDUCAbase
 # El Ministerio publica la estadística de apoyo educativo (NEAE/AACC) entre abril y junio:
 # curso 2022-23 el 10-abr-2024, curso 2023-24 el 12-may-2025. La matrícula (denominador)
 # se actualiza a finales de junio (avance) y abril del año siguiente (resultados detallados).
-# Es idempotente y barato, así que se comprueba a diario todo el año: no depende de acertar la fecha.
+# Diario de marzo a julio (ventana de publicación, con margen) y semanal (lunes) el resto del
+# año por si hay revisiones; el commit de cada comprobación mantiene activo el cron.
 on:
   schedule:
-    - cron: "17 6 * * *"
+    - cron: "17 6 * 3-7 *"
+    - cron: "17 6 * 1,2,8-12 1"
   workflow_dispatch:
 
 permissions:
