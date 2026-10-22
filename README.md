@@ -55,6 +55,15 @@ LICENSE                           # Licencia y atribución
    «Barcelona (2)» en la matrícula 2023-24). Aquí se publican sin ellas, para que
    identificación y matrícula casen por nombre.
 
+## Actualización automática
+
+El workflow `.github/workflows/actualizar-datos.yml` comprueba cada día si el Ministerio ha
+publicado el curso siguiente (la estadística suele salir entre abril y junio) y la matrícula
+nueva o revisada. Si hay novedades descarga las tablas, valida los cuadres (hombres + mujeres,
+CCAA → España, provincias → CCAA), actualiza JSON, CSV y tasas, hace commit y abre un issue de
+aviso. Si la tabla no cuadra no escribe nada y abre un issue. `data/estado.json` guarda la
+última comprobación. Código: `scripts/actualizar_datos.py` (sin dependencias).
+
 ## Regenerar
 
 Este repositorio se genera desde ACI-MAPA con `scripts/publish_dataset_repo.py`: los

@@ -1,0 +1,73 @@
+name: Actualizar datos EDUCAbase
+
+# El Ministerio publica la estadística de apoyo educativo (NEAE/AACC) entre abril y junio:
+# curso 2022-23 el 10-abr-2024, curso 2023-24 el 12-may-2025. La matrícula (denominador)
+# se actualiza a finales de junio (avance) y abril del año siguiente (resultados detallados).
+# Es idempotente y barato, así que se comprueba a diario todo el año: no depende de acertar la fecha.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: actualizar-datos
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: run
+        run: python3 scripts/actualizar_datos.py
+        continue-on-error: true
+
+      - name: Publicar cambios
+        if: steps.run.outputs.failed != '1'
+        env:
+          SUMMARY: ${{ steps.run.outputs.summary }}
+          CHANGED: ${{ steps.run.outputs.changed }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then echo "Nada que publicar"; exit 0; fi
+          if [ "$CHANGED" = "true" ]; then
+            git commit -q -m "Datos EDUCAbase actualizados automáticamente" -m "$SUMMARY"
+          else
+            git commit -q -m "Latido: comprobación periódica (mantiene activo el cron)"
+          fi
+          git push
+
+      - name: Avisar de datos nuevos
+        if: steps.run.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SUMMARY: ${{ steps.run.outputs.summary }}
+        run: |
+          gh issue create --title "Datos nuevos de EDUCAbase cargados ($(date -u +%F))" \
+            --body "Se han publicado y cargado automáticamente, tras validar cuadres (H+M, CCAA→España, provincias→CCAA):
+
+          $SUMMARY
+
+          Si usas estos ficheros en otro sitio (p. ej. ACI-MAPA), acuérdate de sincronizarlos. Puedes cerrar este issue." || true
+
+      - name: Avisar si la tabla publicada no es válida
+        if: steps.run.outputs.failed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SUMMARY: ${{ steps.run.outputs.summary }}
+        run: |
+          t="EDUCAbase: tabla publicada que no se puede cargar automáticamente"
+          n=$(gh issue list --state open --search "\"$t\" in:title" --json number --jq '.[0].number')
+          if [ -n "$n" ]; then echo "Ya hay un issue abierto (#$n)"; exit 1; fi
+          gh issue create --title "$t" --body "El Ministerio ha publicado datos nuevos pero no pasan la validación, así que **no se ha escrito nada**:
+
+          \`\`\`
+          $SUMMARY
+          \`\`\`
+
+          Probablemente cambió el formato de la tabla; hay que ajustar \`scripts/actualizar_datos.py\`."
+          exit 1
