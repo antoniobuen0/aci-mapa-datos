@@ -57,7 +57,7 @@ LICENSE                           # Licencia y atribución
 
 ## Actualización automática
 
-El workflow `.github/workflows/actualizar-datos.yml` comprueba a diario de marzo a julio (y cada lunes el resto del año) si el Ministerio ha
+El workflow `.github/workflows/actualizar-datos.yml` comprueba a diario de marzo a julio si el Ministerio ha
 publicado el curso siguiente (la estadística suele salir entre abril y junio) y la matrícula
 nueva o revisada. Si hay novedades descarga las tablas, valida los cuadres (hombres + mujeres,
 CCAA → España, provincias → CCAA), actualiza JSON, CSV y tasas, hace commit y abre un issue de
